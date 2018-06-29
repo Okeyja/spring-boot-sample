@@ -1,0 +1,5 @@
+# please delete "-public" suffix to enable your setting file
+spring.datasource.driver-class-name = com.mysql.jdbc.Driver
+spring.datasource.url = jdbc:mysql://localhost:3306/newsDB?useUnicode=true&characterEncoding=utf8
+spring.datasource.username =
+spring.datasource.password =

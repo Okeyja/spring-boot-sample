@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${message.title}"></title>
+</head>
+<body>
+<form th:action="@{'/news/'+${message.id}}" method="post">
+    <div class="row">
+        <label for="title">标题</label>
+        <input type="text" id='title' name='title' th:value="${message.title}">
+    </div>
+    <div class="row">
+        <label for="content">内容</label>
+        <textarea type="text" id='content' name="content" th:text="${message.content}"></textarea>
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <input type="submit" th:value="提交修改">
+    </div>
+</form>
+</body>
+</html>
